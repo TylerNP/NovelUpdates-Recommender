@@ -1,0 +1,810 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='novels_0.1.5' inline='true' name='federated.0ox5n260852tp5198g0x21xl03j1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='novels_0.1.5' name='textscan.0u085ej0v0ybxs1ec5cc50acdn34'>
+            <connection class='textscan' directory='/Users/tylerpham/Documents/GitHub/CSC466/week1/final_project/data' filename='novels_0.1.5.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0u085ej0v0ybxs1ec5cc50acdn34' name='novels_0.1.5.csv' table='[novels_0.1.5#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='name' ordinal='1' />
+            <column datatype='string' name='novel_type' ordinal='2' />
+            <column datatype='string' name='cover_url' ordinal='3' />
+            <column datatype='string' name='assoc_names' ordinal='4' />
+            <column datatype='string' name='original_language' ordinal='5' />
+            <column datatype='string' name='authors' ordinal='6' />
+            <column datatype='string' name='genres' ordinal='7' />
+            <column datatype='string' name='tags' ordinal='8' />
+            <column datatype='integer' name='start_year' ordinal='9' />
+            <column datatype='boolean' name='licensed' ordinal='10' />
+            <column datatype='string' name='original_publisher' ordinal='11' />
+            <column datatype='string' name='english_publisher' ordinal='12' />
+            <column datatype='boolean' name='complete_original' ordinal='13' />
+            <column datatype='string' name='chapters_original_current' ordinal='14' />
+            <column datatype='boolean' name='complete_translated' ordinal='15' />
+            <column datatype='real' name='release_freq' ordinal='16' />
+            <column datatype='real' name='activity_week_rank' ordinal='17' />
+            <column datatype='real' name='activity_month_rank' ordinal='18' />
+            <column datatype='real' name='activity_all_time_rank' ordinal='19' />
+            <column datatype='real' name='on_reading_lists' ordinal='20' />
+            <column datatype='real' name='reading_list_month_rank' ordinal='21' />
+            <column datatype='real' name='reading_list_all_time_rank' ordinal='22' />
+            <column datatype='real' name='rating' ordinal='23' />
+            <column datatype='real' name='rating_votes' ordinal='24' />
+            <column datatype='string' name='related_series_ids' ordinal='25' />
+            <column datatype='string' name='recommended_series_ids' ordinal='26' />
+            <column datatype='string' name='recommendation_list_ids' ordinal='27' />
+            <column datatype='string' name='chapter_latest_translated' ordinal='28' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>novel_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[novel_type]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>novel_type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cover_url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cover_url]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>cover_url</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>assoc_names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[assoc_names]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>assoc_names</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>original_language</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[original_language]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>original_language</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>authors</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[authors]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>authors</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genres</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genres]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>genres</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tags]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>tags</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[start_year]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>start_year</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>licensed</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[licensed]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>licensed</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>original_publisher</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[original_publisher]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>original_publisher</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>english_publisher</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[english_publisher]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>english_publisher</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>complete_original</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[complete_original]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>complete_original</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>chapters_original_current</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[chapters_original_current]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>chapters_original_current</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>complete_translated</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[complete_translated]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>complete_translated</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_freq</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[release_freq]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>release_freq</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>activity_week_rank</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[activity_week_rank]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>activity_week_rank</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>activity_month_rank</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[activity_month_rank]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>activity_month_rank</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>activity_all_time_rank</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[activity_all_time_rank]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>activity_all_time_rank</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>on_reading_lists</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[on_reading_lists]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>on_reading_lists</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reading_list_month_rank</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[reading_list_month_rank]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>reading_list_month_rank</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reading_list_all_time_rank</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[reading_list_all_time_rank]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>reading_list_all_time_rank</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating_votes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating_votes]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>rating_votes</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>related_series_ids</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[related_series_ids]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>related_series_ids</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recommended_series_ids</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[recommended_series_ids]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>recommended_series_ids</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recommendation_list_ids</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[recommendation_list_ids]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>recommendation_list_ids</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>chapter_latest_translated</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[chapter_latest_translated]</local-name>
+            <parent-name>[novels_0.1.5.csv]</parent-name>
+            <remote-alias>chapter_latest_translated</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='novels_0.1.5.csv' datatype='table' name='[__tableau_internal_object_id__].[novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2]' role='measure' type='quantitative' />
+      <column caption='Activity All Time Rank' datatype='real' name='[activity_all_time_rank]' role='measure' type='quantitative' />
+      <column caption='Activity Month Rank' datatype='real' name='[activity_month_rank]' role='measure' type='quantitative' />
+      <column caption='Activity Week Rank' datatype='real' name='[activity_week_rank]' role='measure' type='quantitative' />
+      <column caption='Assoc Names' datatype='string' name='[assoc_names]' role='dimension' type='nominal' />
+      <column caption='Authors' datatype='string' name='[authors]' role='dimension' type='nominal' />
+      <column caption='Chapter Latest Translated' datatype='string' name='[chapter_latest_translated]' role='dimension' type='nominal' />
+      <column caption='Chapters Original Current' datatype='string' name='[chapters_original_current]' role='dimension' type='nominal' />
+      <column caption='Complete Original' datatype='boolean' name='[complete_original]' role='dimension' type='nominal' />
+      <column caption='Complete Translated' datatype='boolean' name='[complete_translated]' role='dimension' type='nominal' />
+      <column caption='Cover Url' datatype='string' name='[cover_url]' role='dimension' type='nominal' />
+      <column caption='English Publisher' datatype='string' name='[english_publisher]' role='dimension' type='nominal' />
+      <column caption='Genres' datatype='string' name='[genres]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Licensed' datatype='boolean' name='[licensed]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Novel Type' datatype='string' name='[novel_type]' role='dimension' type='nominal' />
+      <column caption='On Reading Lists' datatype='real' name='[on_reading_lists]' role='measure' type='quantitative' />
+      <column caption='Original Language' datatype='string' name='[original_language]' role='dimension' type='nominal' />
+      <column caption='Original Publisher' datatype='string' name='[original_publisher]' role='dimension' type='nominal' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Rating Votes' datatype='real' name='[rating_votes]' role='measure' type='quantitative' />
+      <column caption='Reading List All Time Rank' datatype='real' name='[reading_list_all_time_rank]' role='measure' type='quantitative' />
+      <column caption='Reading List Month Rank' datatype='real' name='[reading_list_month_rank]' role='measure' type='quantitative' />
+      <column caption='Recommendation List Ids' datatype='string' name='[recommendation_list_ids]' role='dimension' type='nominal' />
+      <column caption='Recommended Series Ids' datatype='string' name='[recommended_series_ids]' role='dimension' type='nominal' />
+      <column caption='Related Series Ids' datatype='string' name='[related_series_ids]' role='dimension' type='nominal' />
+      <column caption='Release Freq' datatype='real' name='[release_freq]' role='measure' type='quantitative' />
+      <column caption='Start Year' datatype='integer' name='[start_year]' role='dimension' type='quantitative' />
+      <column caption='Tags' datatype='string' name='[tags]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='novels_0.1.5.csv' id='novels_0.1.5.csv_42AB9B2AFF634041B13B11A9D12CCBE2'>
+            <properties context=''>
+              <relation connection='textscan.0u085ej0v0ybxs1ec5cc50acdn34' name='novels_0.1.5.csv' table='[novels_0.1.5#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='name' ordinal='1' />
+                  <column datatype='string' name='novel_type' ordinal='2' />
+                  <column datatype='string' name='cover_url' ordinal='3' />
+                  <column datatype='string' name='assoc_names' ordinal='4' />
+                  <column datatype='string' name='original_language' ordinal='5' />
+                  <column datatype='string' name='authors' ordinal='6' />
+                  <column datatype='string' name='genres' ordinal='7' />
+                  <column datatype='string' name='tags' ordinal='8' />
+                  <column datatype='integer' name='start_year' ordinal='9' />
+                  <column datatype='boolean' name='licensed' ordinal='10' />
+                  <column datatype='string' name='original_publisher' ordinal='11' />
+                  <column datatype='string' name='english_publisher' ordinal='12' />
+                  <column datatype='boolean' name='complete_original' ordinal='13' />
+                  <column datatype='string' name='chapters_original_current' ordinal='14' />
+                  <column datatype='boolean' name='complete_translated' ordinal='15' />
+                  <column datatype='real' name='release_freq' ordinal='16' />
+                  <column datatype='real' name='activity_week_rank' ordinal='17' />
+                  <column datatype='real' name='activity_month_rank' ordinal='18' />
+                  <column datatype='real' name='activity_all_time_rank' ordinal='19' />
+                  <column datatype='real' name='on_reading_lists' ordinal='20' />
+                  <column datatype='real' name='reading_list_month_rank' ordinal='21' />
+                  <column datatype='real' name='reading_list_all_time_rank' ordinal='22' />
+                  <column datatype='real' name='rating' ordinal='23' />
+                  <column datatype='real' name='rating_votes' ordinal='24' />
+                  <column datatype='string' name='related_series_ids' ordinal='25' />
+                  <column datatype='string' name='recommended_series_ids' ordinal='26' />
+                  <column datatype='string' name='recommendation_list_ids' ordinal='27' />
+                  <column datatype='string' name='chapter_latest_translated' ordinal='28' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='novels_0.1.5' name='federated.0ox5n260852tp5198g0x21xl03j1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ox5n260852tp5198g0x21xl03j1'>
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0ox5n260852tp5198g0x21xl03j1].[none:name:nk]</cols>
+      </table>
+      <simple-id uuid='{0022475D-F3B2-4158-935A-3493351B860D}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ox5n260852tp5198g0x21xl03j1].[none:name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{50C7F7C8-56BE-4109-9CF3-787F35931E52}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='168' name='Sheet 1' width='384'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
